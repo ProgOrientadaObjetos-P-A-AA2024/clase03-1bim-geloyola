@@ -10,10 +10,15 @@ package paqueteuno;
  * @author reroes
  */
 public class FacturaTelefono {
+    private String nombresCompletos;
     private String numeroTelefono;
     private double minutosMes;
     private double valorMinuto;
     private double valorFactura;
+    
+    public void establecerNombresCompletos(String c){
+        nombresCompletos = c;
+    }
     
     public void establecerNumeroTelefono(String c){
         numeroTelefono = c;
@@ -32,6 +37,9 @@ public class FacturaTelefono {
         valorFactura = minutosMes * valorMinuto;
     }
     
+    public String obtenerNombresCompletos(){
+        return nombresCompletos;
+    }
     public String obtenerNumeroTelefono(){
         return numeroTelefono;
     }
